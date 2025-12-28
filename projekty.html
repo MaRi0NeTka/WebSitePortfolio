@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <title>Moje portfólio</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Toto je mojé portfolio, robím ho, aby získať body a zlepšiť skúsenosť v HTML5 a CSS">
+    <meta name="keywords" content="Projekt, vzdelanie, kontaktné informácie, skúsenosti">
+    <meta name="author" content="Nedilko Maksym">
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<!-- Maksym Nedilko -->
+<body id="top">
+    <header>
+        <h1><em><mark>Moje herné projekty</mark></em></h1>
+    </header>
+
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="logo">
+    </a>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="projekty.html">Projekty</a></li>
+            <li><a href="cestovanie.html">Cestovanie</a></li>
+            <li><a href="hra.html">Hra</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article id="hry_projecty">
+            <h2>Mini konzolová hra</h2>
+            <p>Vytvoril som niekoľko <strong>mini hier v jazyku Python</strong>,
+                medzi nimi aj klasické <em>Piškvorky (Tic-Tac-Toe)</em>,
+                ktoré sa hrajú v konzole. Program využíva cykly, podmienky,
+                prácu s mriežkou a logiku na detekciu výhry.
+            </p>
+            <a href="https://github.com/MaRi0NeTka/tic-tac-toe" target="_blank" class="btn">Zdrojový kód na GitHub</a>
+        </article>
+        <article>
+            <h2>2D hra</h2>
+            <p>Na začiatku, keď som ešte presne nevedel, čomu sa chcem venovať,
+                som sa rozhodol vyskúšať vytvoriť <strong>vlastnú 2D hru</strong>.
+                Pomocou knižnice <strong>Pygame</strong> som vytvoril projekt
+                <em>„Invázia mimozemšťanov“</em>, v ktorom hráč ovláda vesmírnu loď
+                a bráni Zem pred útočiacimi nepriateľmi.
+                Hra obsahuje pohyb, streľbu, kolízie, skóre a postupne rastúcu obtiažnosť.
+                Tento projekt mi pomohol pochopiť princípy <strong>objektovo orientovaného
+                    programovania</strong> a hernej logiky – a potvrdil, že programovanie
+                ma naozaj baví.
+            </p>
+            <a href="https://github.com/MaRi0NeTka/alien_invasion" target="_blank" class="btn">Zdrojový kód na
+                GitHub</a>
+        </article>
+
+        <article id="web_projekty">
+            <h2>Webové aplikácie – internetové obchody</h2>
+            <p>Po tom, čo som si vyskúšal tvorbu hier v jazyku <strong>Python</strong>,
+                som sa rozhodol zamerať na <strong>webový vývoj</strong> a framework
+                <strong>Django</strong>.
+                Vytvoril som <em>dva internetové obchody</em> – prvý je plne funkčný
+                s možnosťou registrácie používateľov, pridávania produktov,
+                správy objednávok a jednoduchého administračného rozhrania.
+                Druhý projekt je momentálne <mark>v štádiu vývoja</mark>,
+                kde experimentujem s rozšírenými funkciami ako platby, kategórie
+                a používateľské profily.
+            </p>
+            <a href="https://github.com/MaRi0NeTka/furniture_store-OakBuild-" target="_blank" class="btn">Zdrojový kód na GitHub<br>(hotový projekt)</a>
+        </article>
+
+        <article id="memes">
+            <h2>Takto som sa cítil pri písaní kódu vs realita 🐒</h2>
+            <figure>
+                <h3>Očakávania</h3>
+                <!-- playsinline aby neotvaralo sa na celu obrazovku na mobile -->
+                <video class="meme-video" controls playsinline>
+                    <source src="images/Man.mp4" type="video/mp4">
+                    Tvoj prehliadač nepodporuje video tag.
+                </video>
+            </figure>
+
+            <figure>
+                <h3>Realita</h3>
+                 <!-- playsinline aby neotvaralo sa na celu obrazovku na mobile -->
+                <video class="meme-video" controls playsinline>
+                    <source src="images/opica.mp4" type="video/mp4">
+                    Tvoj prehliadač nepodporuje video tag.
+                </video>
+            </figure>
+        </article>
+
+    </main>
+
+    <footer>
+        <a href="#top">Hore</a>
+        <p>&copy; 2025 Nedilko Maksym</p>
+    </footer>
+
+</body>
+
+</html>
