@@ -1,0 +1,326 @@
+/* Custom hra.html */
+html.metro-theme{
+    background-image: url('../images/hra/metro_bg.jpg');
+    background-size: cover;              /* растягивает фон так, чтобы он целиком покрыл весь элемент” */
+    background-position: center 20%;     /* Задаёт точку, от которой выравнивается фон */
+    background-repeat: no-repeat;        /*Запрещает повторять картинку.*/
+    background-attachment: fixed;        /* Привязывает фон к окну браузера, а не к самому элементу. */
+}
+.custom-block{
+    width: 75%;
+    /*max sirka sekcie 900px*/
+    max-width: 750px;
+    margin: 40px;
+    padding: 20px;
+    background-color: rgb(186, 89, 89);
+    border-radius: 10px;
+    border: 5px solid black;
+
+}
+.change_h{
+    color: #060101;
+    font-weight: bold;
+    font-size: 120%;
+}
+/* Custom obrazovky hra.html */
+.custom-images{
+    height: 300px;
+    width: auto;
+    float: right;
+    margin: 16px;
+    border-radius: 15px;
+    border:3px solid white;
+    transition: transform 0.5s;
+}
+.custom-images:hover{
+    transform: scale(1.1);
+}
+/* Custom footer */
+.custom-footer-color-text{
+    font-weight: bold;
+    color: #c13939;
+    font-size: 25px;
+    text-decoration: none;
+}
+/* Tabuľka pre hra.html */
+table {
+  border-collapse: collapse;   /* объедини границы ячеек таблицы в одну общую линию */
+  width: 90%;
+  margin: 20px auto;
+  background-color: #7d83b1;
+  border-radius: 10px;
+  overflow: hidden;        /* если что-то выходит за границы (включая фон), — обрежь по контуру элемента*/
+}
+
+th, td {
+  border: 2px solid #000;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+td>img{
+    height: auto;
+    width: 100px;
+}
+
+th {
+  background-color: #443829;
+  color: white;
+}
+
+table img {
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+table img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+/* Bezne stranky */
+
+html{
+    background-color: aliceblue;
+}
+/*stylovanie stranky*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*stylovanie obsahu stranky*/
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #060101;
+    font-family: Arial, sans-serif;
+    line-height: 2;
+}
+
+/* obrazok na index (Logo)*/
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    z-index: 10; 
+}
+
+.logo > img{
+    height: auto;
+    width: 200px;
+}
+
+/* Hlavička */
+header{
+    text-align: center;
+    padding: 5px;  
+}
+header > h1{
+    color: #151617;
+}
+header > h2{
+    color: rgb(58, 53, 53);
+}
+
+/* Navigacia */
+nav{
+    display: flex;
+    justify-content: center;
+}
+nav > ul{
+    /* V jeden riadok */
+    display: flex;
+    /* Velkost medzery */
+    gap: 40px;
+    /* Bez botok */
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav a{
+    /* Linkova podčiarka */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(19, 22, 21);
+    transition: transform 0.3s, color 0.3s;
+}
+/*efekt obrazkou pri prechode myskou*/
+nav a:hover{
+    transform: scale(1.5);
+    color: #6d7072;
+}
+
+/* Hlavna informacia/hlavny obsah */
+main{
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Obsah sekcie */
+section, article{
+    width: 75%;
+    /*max sirka sekcie 900px*/
+    max-width: 750px;
+    margin: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+section > ul, section > ol{
+    list-style:circle;
+    padding-left: 30px;
+}
+section > p{
+    font-size: 125%;
+    font-style: oblique;
+
+}
+section > ul > li > a{
+    font-size: 17px;
+    /* vyhodil som podcarknutie */
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(63, 56, 56);
+    
+}
+section > h2, article > h2{
+    color: rgb(111, 102, 192);
+}
+article > h3{
+    color: #060101;
+    font-weight: bold;
+    font-size: 120%;
+}
+article > p{
+    font-size: 115%;
+    font-style: oblique;
+}
+/* Mark */
+mark{
+    background-color: yellowgreen;
+}
+/* Video */
+.meme-video {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+figure {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* Tlacidlo pre a */
+.btn{
+    display: block;
+    float: right;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #b1559c;
+    text-align: center;
+    color: #b9b5ba;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+    padding: 5px;
+    transition: transform 0.5s;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+/* Obrazky na cestovanie*/
+aside{
+    display: flex;
+    /* gap - medzera velkostou 15 px medzi obrazkami */
+    gap: 20px;
+    /* Obrazovky v centere */
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.some{
+    border: #060101 solid;
+}
+
+
+aside > img{
+    height: 300px;
+    width: auto;
+    border-radius: 15px;
+    border:3px solid white;
+    transition: transform 0.5s;
+}
+aside > img:hover{
+    transform: scale(1.1);
+}
+/* Mapa cestovanie */
+iframe{
+    height: 300px;
+    width: 400px;
+    border-radius: 15px;
+    max-width: 500px;
+}
+
+/* Mappingovy obrazok */
+section > img{
+    float: right;          
+    margin: 10px 20px 10px 0; 
+    border-radius: 10px;
+}
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Citacie */
+blockquote > cite{
+    text-align: right;
+    font-weight: bold;
+    color: #444;
+
+}
+
+/* Definičný zoznam */
+dl{
+    margin: 10px 0;
+}
+dt{
+    font-weight: bold;
+    color: #222;
+}
+
+dd{
+    margin-left: 20px;
+    color: #555;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    margin: 22px;
+}
+footer > a{
+    font-weight: bold;
+    color: #111;
+    font-size: 24px;
+    text-decoration: none;
+
+}
+footer > p{
+    text-align: center;
+}
